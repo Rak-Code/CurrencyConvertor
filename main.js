@@ -1,4 +1,4 @@
-// button = document.querySelector("button")
+
 from = document.querySelector("#from")
 to = document.querySelector("#to")
 result = document.querySelector("#result")
@@ -12,7 +12,6 @@ async function convert(){
     from_val =from.value;
     to_val = to.value;
     amount_val = document.querySelector("#amount").value;
-    // console.log(`https://v6.exchangerate-api.com/v6/3eec63895f296894597acb86/latest/${from_val}`);
     await fetch(`https://v6.exchangerate-api.com/v6/3eec63895f296894597acb86/latest/${from_val}`)
             .then(response=>response.json())
             // .then(data=>console.log(data))
@@ -24,3 +23,7 @@ async function convert(){
             .catch(error=>console.log(error))
 
 }
+
+
+
+
